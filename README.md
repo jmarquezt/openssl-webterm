@@ -1,6 +1,6 @@
 # <img height="48" src="https://www.cryptool.org/assets/cto/plugin-icons/openssl.svg" valign="middle"> OpenSSL Webterm
 
-User-friendly web app to use OpenSSL, based on WebAssembly. OpenSSL v3 has been compiled with Emscripten to run in a terminal/tty emulator in the browser. See the [Live Demo](https://www.cryptool.org/cto/openssl). You could also [host this on your own machine](#installation).
+User-friendly web app to use OpenSSL, based on WebAssembly. OpenSSL v1.1.1w has been compiled with Emscripten to run in a terminal/tty emulator in the browser. See the [Live Demo](https://www.cryptool.org/cto/openssl). You could also [host this on your own machine](#installation).
 
 We then built a graphical user interface (GUI) on top of that, so it's easy for newbies to operate. Your actions in the GUI are transformed to original OpenSSL commands on the command line, so you easily can learn their syntax.
 
