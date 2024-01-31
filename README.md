@@ -4,7 +4,7 @@ User-friendly web app to use OpenSSL, based on WebAssembly. OpenSSL v1.1.1w has 
 
 We then built a graphical user interface (GUI) on top of that, so it's easy for newbies to operate. Your actions in the GUI are transformed to original OpenSSL commands on the command line, so you easily can learn their syntax.
 
-> **Disclaimer**: This tool is intended for teaching and educational purposes. It was developed in 2021 by the [CrypTool project](https://www.cryptool.org) in order to run OpenSSL v3 in a browser. You can also look at [its predecessor](https://github.com/janeumnn/openssl-webapp).
+> **Disclaimer**: This tool is intended for teaching and educational purposes. It was developed in 2021 by the [CrypTool project](https://www.cryptool.org) in order to run OpenSSL v1.1.1w in a browser. You can also look at [its predecessor](https://github.com/janeumnn/openssl-webapp).
 
 ![image](https://user-images.githubusercontent.com/9321076/157410455-686ce0de-335f-4335-a639-07b6963e4589.png)
 
