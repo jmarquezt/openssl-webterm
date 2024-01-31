@@ -1,6 +1,7 @@
 #!/bin/bash
 
-OPENSSL_VERSION="openssl-3.1.0"
+OPENSSL_VERSION="1.1.1"
+OPENSSL_SUBVERSION="w"
 OPENSSL_DIR="src"
 
 if [ -d ${OPENSSL_DIR} ]; then
@@ -8,11 +9,11 @@ if [ -d ${OPENSSL_DIR} ]; then
 fi
 
 if [ ! -f ${OPENSSL_VERSION}.tar.gz ]; then
-  curl -O https://www.openssl.org/source/${OPENSSL_VERSION}.tar.gz
+  curl -O https://www.openssl.org/source/old/${OPENSSL_VERSION}/openssl-${OPENSSL_VERSION}${OPENSSL_SUBVERSION}.tar.gz
 fi
 
 mkdir ${OPENSSL_DIR}
-tar xf ${OPENSSL_VERSION}.tar.gz --strip-components=1 --directory=${OPENSSL_DIR}
+tar xf openssl-${OPENSSL_VERSION}${OPENSSL_SUBVERSION}.tar.gz --strip-components=1 --directory=${OPENSSL_DIR}
 cd ${OPENSSL_DIR} || exit 1
 
 mkdir -p usr/local/ssl/
@@ -62,4 +63,4 @@ cp apps/openssl.wasm ../../../binary/openssl.wasm || exit 1
 sed -i '1s;^;\/* eslint-disable *\/;' ../../../binary/openssl.js
 
 # clean up directory
-cd .. && rm -rf ${OPENSSL_DIR} ${OPENSSL_VERSION}.tar.gz
+cd .. && rm -rf ${OPENSSL_DIR} openssl-${OPENSSL_VERSION}${OPENSSL_SUBVERSION}.tar.gz
