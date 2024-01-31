@@ -63,4 +63,4 @@ cp apps/openssl.wasm ../../../binary/openssl.wasm || exit 1
 sed -i '1s;^;\/* eslint-disable *\/;' ../../../binary/openssl.js
 
 # clean up directory
-cd .. && rm -rf ${OPENSSL_DIR} ${OPENSSL_VERSION}.tar.gz
+cd .. && rm -rf ${OPENSSL_DIR} openssl-${OPENSSL_VERSION}${OPENSSL_SUBVERSION}.tar.gz
